@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let countries: [Country] = Bundle.main.decode(fileName: "data.json")
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(countries) { country in 
+            Text(country.countryName)
+        }
     }
 }
 
