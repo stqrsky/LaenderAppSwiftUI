@@ -32,7 +32,7 @@ class UserDefaultsManager: ObservableObject {
     }
     
     func getAllFavoriteCountries() -> [Country] {
-        return let allCountries.filter {
+        return allCountries.filter {
             favorites.contains($0.id)
         }
     }

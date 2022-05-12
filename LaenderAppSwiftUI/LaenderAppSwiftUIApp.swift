@@ -17,7 +17,7 @@ struct LaenderAppSwiftUIApp: App {
                         Image(systemName: "flag")
                         Text("Länder")
                     }
-                CountryFavoriteView
+                CountryFavoriteView()
                     .tabItem {
                         Image(systemName: "suit.heart")
                         Text("Favoriten")

@@ -19,6 +19,7 @@
 		F86915DA282D351B001151A0 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86915D9282D351B001151A0 /* UserDefaultsManager.swift */; };
 		F86915DC282D455B001151A0 /* CountryFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86915DB282D455B001151A0 /* CountryFavoriteView.swift */; };
 		F86915DE282D473A001151A0 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86915DD282D473A001151A0 /* CountryListView.swift */; };
+		F86915E1282D522F001151A0 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86915E0282D522F001151A0 /* EmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		F86915D9282D351B001151A0 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		F86915DB282D455B001151A0 /* CountryFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFavoriteView.swift; sourceTree = "<group>"; };
 		F86915DD282D473A001151A0 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
+		F86915E0282D522F001151A0 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				F86915DD282D473A001151A0 /* CountryListView.swift */,
 				F860EC70282CE9D9001F6AF8 /* CountryCell.swift */,
+				F86915E0282D522F001151A0 /* EmptyStateView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				F860EC6D282AB763001F6AF8 /* Country.swift in Sources */,
 				F860EC6A282AB6B3001F6AF8 /* Bundle+Ext.swift in Sources */,
+				F86915E1282D522F001151A0 /* EmptyStateView.swift in Sources */,
 				F86915DE282D473A001151A0 /* CountryListView.swift in Sources */,
 				F860EC71282CE9D9001F6AF8 /* CountryCell.swift in Sources */,
 				F86915DC282D455B001151A0 /* CountryFavoriteView.swift in Sources */,

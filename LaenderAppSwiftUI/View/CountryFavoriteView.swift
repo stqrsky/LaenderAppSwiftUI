@@ -12,9 +12,19 @@ struct CountryFavoriteView: View {
     
     var body: some View {
         NavigationView {
-            CountryListView(countries: userDefaultsManager.getAllFavoriteCountries())
-                                .navigationBarTitle("Favoriten")
+            
+            VStack {
+                
+                if userDefaultsManager.favorites.isEmpty {
+                    EmptyStateView()
+                } else {
+                    CountryListView(countries: userDefaultsManager.getAllFavoriteCountries())
+                }
+                
+            }
+            .navigationBarTitle("Favoriten")
         }
+        
     }
 }
 
