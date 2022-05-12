@@ -22,8 +22,17 @@ struct CountryCell: View {
                         .stroke(Color.black, lineWidth: 1)
                 )
             
-            Text(country.countryName)
-                .font(.headline)
+            VStack(alignment: .leading, spacing: 6) {
+                Text(country.countryName)
+                    .font(.headline)
+                
+                Button(action: { print("Did tapped")}) {
+                    Image(systemName: "suit.heart")
+                        .font(.headline)
+                        .foregroundColor(.pink)
+                }
+                .buttonStyle(BorderlessButtonStyle())
+            }
         }
         .padding([.top, .bottom], 10)
     }

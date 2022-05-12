@@ -29,7 +29,14 @@ struct CountryDetailView: View {
             .listStyle(InsetGroupedListStyle())
             
         }
-            .navigationTitle(country.countryName)
+        .navigationBarItems(trailing:
+                                Button(action: {}) {
+                                    Image(systemName: "suit.heart")
+                                        .font(.title3)
+                                        .foregroundColor(.pink)
+                                }
+        )
+        .navigationTitle(country.countryName)
     }
 }
 
