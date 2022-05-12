@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CountryDetailView: View {
+    @EnvironmentObject var userDefaultsManager: UserDefaultsManager
+    
     let country: Country
     
     var body: some View {
@@ -30,8 +32,10 @@ struct CountryDetailView: View {
             
         }
         .navigationBarItems(trailing:
-                                Button(action: {}) {
-                                    Image(systemName: "suit.heart")
+                                Button(action: {
+                                    userDefaultsManager.toggleFavoritesStatus(for: country)
+                                }) {
+                                    Image(systemName: userDefaultsManager.isCountryFavorite(country: country) ? "suit.heart.fill" : "suit.heart")
                                         .font(.title3)
                                         .foregroundColor(.pink)
                                 }
