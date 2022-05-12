@@ -14,15 +14,8 @@ struct CountryStandardView: View {
     
     var body: some View {
         NavigationView {
-            List(countries) { country in
-                NavigationLink(destination: CountryDetailView(country: country)) {
-                    
-                    CountryCell(country: country)
-                    
-                }
-            }
-            .listStyle(InsetGroupedListStyle())
-            .navigationBarTitle("Länder")
+            CountryListView(countries: countries)
+                .navigationBarTitle("Länder")
         }
         
         

@@ -11,7 +11,19 @@ import SwiftUI
 struct LaenderAppSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            CountryStandardView().environmentObject(UserDefaultsManager())
+            TabView {
+                CountryStandardView()
+                    .tabItem {
+                        Image(systemName: "flag")
+                        Text("Länder")
+                    }
+                CountryFavoriteView
+                    .tabItem {
+                        Image(systemName: "suit.heart")
+                        Text("Favoriten")
+                    }
+            }
+            .environmentObject(UserDefaultsManager())
         }
     }
 }

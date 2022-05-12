@@ -17,6 +17,8 @@ class UserDefaultsManager: ObservableObject {
         }
     }
     
+    let allCountries: [Country] = Bundle.main.decode(fileName: "data.json")
+    
     func toggleFavoritesStatus(for country: Country) {
         if favorites.contains(country.id) {
             favorites = favorites.filter { $0 != country.id }
@@ -28,4 +30,11 @@ class UserDefaultsManager: ObservableObject {
     func isCountryFavorite(country: Country) -> Bool {
         return favorites.contains(country.id)
     }
+    
+    func getAllFavoriteCountries() -> [Country] {
+        return let allCountries.filter {
+            favorites.contains($0.id)
+        }
+    }
+    
 }
