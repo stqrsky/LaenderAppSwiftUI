@@ -16,6 +16,7 @@
 		F860EC6D282AB763001F6AF8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC6C282AB763001F6AF8 /* Country.swift */; };
 		F860EC6F282CDF95001F6AF8 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC6E282CDF95001F6AF8 /* CountryDetailView.swift */; };
 		F860EC71282CE9D9001F6AF8 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC70282CE9D9001F6AF8 /* CountryCell.swift */; };
+		F86915DA282D351B001151A0 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86915D9282D351B001151A0 /* UserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F860EC6C282AB763001F6AF8 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		F860EC6E282CDF95001F6AF8 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		F860EC70282CE9D9001F6AF8 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		F86915D9282D351B001151A0 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				F860EC59282AB46D001F6AF8 /* LaenderAppSwiftUIApp.swift */,
+				F86915D9282D351B001151A0 /* UserDefaultsManager.swift */,
 				F860EC73282CEB3F001F6AF8 /* View */,
 				F860EC72282CEB20001F6AF8 /* Model */,
 				F860EC6B282AB6F4001F6AF8 /* Extensions */,
@@ -180,6 +183,7 @@
 				F860EC6D282AB763001F6AF8 /* Country.swift in Sources */,
 				F860EC6A282AB6B3001F6AF8 /* Bundle+Ext.swift in Sources */,
 				F860EC71282CE9D9001F6AF8 /* CountryCell.swift in Sources */,
+				F86915DA282D351B001151A0 /* UserDefaultsManager.swift in Sources */,
 				F860EC5C282AB46D001F6AF8 /* CountryStandardView.swift in Sources */,
 				F860EC5A282AB46D001F6AF8 /* LaenderAppSwiftUIApp.swift in Sources */,
 				F860EC6F282CDF95001F6AF8 /* CountryDetailView.swift in Sources */,

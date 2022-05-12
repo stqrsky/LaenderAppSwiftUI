@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CountryStandardView: View {
+    @EnvironmentObject var userDefaultsManager: UserDefaultsManager
+    
     let countries: [Country] = Bundle.main.decode(fileName: "data.json")
     
     var body: some View {

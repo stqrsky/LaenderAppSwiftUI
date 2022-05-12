@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CountryCell: View {
+    @EnvironmentObject var userDefaultsManager: UserDefaultsManager
+    
     let country: Country
     
     var body: some View {
@@ -26,8 +28,8 @@ struct CountryCell: View {
                 Text(country.countryName)
                     .font(.headline)
                 
-                Button(action: { print("Did tapped")}) {
-                    Image(systemName: "suit.heart")
+                Button(action: { userDefaultsManager.toggleFavoritesStatus(for: country)}) {
+                    Image(systemName: userDefaultsManager.isCountryFavorite(country: country) ? "suit.heart.fill" : "suit.heart")
                         .font(.headline)
                         .foregroundColor(.pink)
                 }
