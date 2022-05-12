@@ -13,27 +13,28 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(countries) { country in
-                HStack {
-                    Image(country.imageName)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                        .clipShape(Circle())
-                        .overlay(
-                            Circle()
-                                .stroke(Color.black, lineWidth: 1)
-                        )
-                    
-                    Text(country.countryName)
-                        .font(.headline)
+                NavigationLink(destination: CountryDetailView(country: country)) {
+                    HStack {
+                        Image(country.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 50)
+                            .clipShape(Circle())
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.black, lineWidth: 1)
+                            )
+                        
+                        Text(country.countryName)
+                            .font(.headline)
+                    }
+                    .padding([.top, .bottom], 10)
                 }
-                .padding([.top, .bottom], 10)
-                
             }
             .navigationBarTitle("Länder")
         }
         
-       
+        
     }
 }
 

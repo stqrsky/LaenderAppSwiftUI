@@ -14,6 +14,7 @@
 		F860EC69282AB6B3001F6AF8 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F860EC67282AB6B3001F6AF8 /* data.json */; };
 		F860EC6A282AB6B3001F6AF8 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC68282AB6B3001F6AF8 /* Bundle+Ext.swift */; };
 		F860EC6D282AB763001F6AF8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC6C282AB763001F6AF8 /* Country.swift */; };
+		F860EC6F282CDF95001F6AF8 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC6E282CDF95001F6AF8 /* CountryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F860EC67282AB6B3001F6AF8 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		F860EC68282AB6B3001F6AF8 /* Bundle+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
 		F860EC6C282AB763001F6AF8 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		F860EC6E282CDF95001F6AF8 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				F860EC59282AB46D001F6AF8 /* LaenderAppSwiftUIApp.swift */,
+				F860EC6E282CDF95001F6AF8 /* CountryDetailView.swift */,
 				F860EC5B282AB46D001F6AF8 /* ContentView.swift */,
 				F860EC6C282AB763001F6AF8 /* Country.swift */,
 				F860EC5D282AB470001F6AF8 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				F860EC6A282AB6B3001F6AF8 /* Bundle+Ext.swift in Sources */,
 				F860EC5C282AB46D001F6AF8 /* ContentView.swift in Sources */,
 				F860EC5A282AB46D001F6AF8 /* LaenderAppSwiftUIApp.swift in Sources */,
+				F860EC6F282CDF95001F6AF8 /* CountryDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
