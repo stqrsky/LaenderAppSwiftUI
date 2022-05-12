@@ -45,5 +45,6 @@ struct CountryCell_Previews: PreviewProvider {
         let countries: [Country] = Bundle.main.decode(fileName: "data.json")
         
         CountryCell(country: countries[0])
+            .environmentObject(UserDefaultsManager())
     }
 }

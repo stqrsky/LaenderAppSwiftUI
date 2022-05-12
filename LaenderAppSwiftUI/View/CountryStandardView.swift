@@ -31,5 +31,6 @@ struct CountryStandardView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         CountryStandardView()
+            .environmentObject(UserDefaultsManager())
     }
 }

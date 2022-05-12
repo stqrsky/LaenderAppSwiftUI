@@ -49,5 +49,6 @@ struct CountryDetailView_Previews: PreviewProvider {
         let countries: [Country] = Bundle.main.decode(fileName: "data.json")
         
         CountryDetailView(country: countries[0])
+            .environmentObject(UserDefaultsManager())
     }
 }
