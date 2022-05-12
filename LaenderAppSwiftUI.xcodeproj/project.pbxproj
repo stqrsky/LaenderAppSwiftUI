@@ -8,25 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F860EC5A282AB46D001F6AF8 /* LaenderAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC59282AB46D001F6AF8 /* LaenderAppSwiftUIApp.swift */; };
-		F860EC5C282AB46D001F6AF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC5B282AB46D001F6AF8 /* ContentView.swift */; };
+		F860EC5C282AB46D001F6AF8 /* CountryStandardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC5B282AB46D001F6AF8 /* CountryStandardView.swift */; };
 		F860EC5E282AB470001F6AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F860EC5D282AB470001F6AF8 /* Assets.xcassets */; };
 		F860EC61282AB470001F6AF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F860EC60282AB470001F6AF8 /* Preview Assets.xcassets */; };
 		F860EC69282AB6B3001F6AF8 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F860EC67282AB6B3001F6AF8 /* data.json */; };
 		F860EC6A282AB6B3001F6AF8 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC68282AB6B3001F6AF8 /* Bundle+Ext.swift */; };
 		F860EC6D282AB763001F6AF8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC6C282AB763001F6AF8 /* Country.swift */; };
 		F860EC6F282CDF95001F6AF8 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC6E282CDF95001F6AF8 /* CountryDetailView.swift */; };
+		F860EC71282CE9D9001F6AF8 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860EC70282CE9D9001F6AF8 /* CountryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F860EC56282AB46D001F6AF8 /* LaenderAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaenderAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860EC59282AB46D001F6AF8 /* LaenderAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaenderAppSwiftUIApp.swift; sourceTree = "<group>"; };
-		F860EC5B282AB46D001F6AF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F860EC5B282AB46D001F6AF8 /* CountryStandardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStandardView.swift; sourceTree = "<group>"; };
 		F860EC5D282AB470001F6AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F860EC60282AB470001F6AF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F860EC67282AB6B3001F6AF8 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		F860EC68282AB6B3001F6AF8 /* Bundle+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
 		F860EC6C282AB763001F6AF8 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		F860EC6E282CDF95001F6AF8 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		F860EC70282CE9D9001F6AF8 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				F860EC59282AB46D001F6AF8 /* LaenderAppSwiftUIApp.swift */,
-				F860EC6E282CDF95001F6AF8 /* CountryDetailView.swift */,
-				F860EC5B282AB46D001F6AF8 /* ContentView.swift */,
-				F860EC6C282AB763001F6AF8 /* Country.swift */,
-				F860EC5D282AB470001F6AF8 /* Assets.xcassets */,
-				F860EC67282AB6B3001F6AF8 /* data.json */,
+				F860EC73282CEB3F001F6AF8 /* View */,
+				F860EC72282CEB20001F6AF8 /* Model */,
 				F860EC6B282AB6F4001F6AF8 /* Extensions */,
+				F860EC5D282AB470001F6AF8 /* Assets.xcassets */,
 				F860EC5F282AB470001F6AF8 /* Preview Content */,
 			);
 			path = LaenderAppSwiftUI;
@@ -85,6 +85,25 @@
 				F860EC68282AB6B3001F6AF8 /* Bundle+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F860EC72282CEB20001F6AF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F860EC67282AB6B3001F6AF8 /* data.json */,
+				F860EC6C282AB763001F6AF8 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F860EC73282CEB3F001F6AF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F860EC5B282AB46D001F6AF8 /* CountryStandardView.swift */,
+				F860EC6E282CDF95001F6AF8 /* CountryDetailView.swift */,
+				F860EC70282CE9D9001F6AF8 /* CountryCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +179,8 @@
 			files = (
 				F860EC6D282AB763001F6AF8 /* Country.swift in Sources */,
 				F860EC6A282AB6B3001F6AF8 /* Bundle+Ext.swift in Sources */,
-				F860EC5C282AB46D001F6AF8 /* ContentView.swift in Sources */,
+				F860EC71282CE9D9001F6AF8 /* CountryCell.swift in Sources */,
+				F860EC5C282AB46D001F6AF8 /* CountryStandardView.swift in Sources */,
 				F860EC5A282AB46D001F6AF8 /* LaenderAppSwiftUIApp.swift in Sources */,
 				F860EC6F282CDF95001F6AF8 /* CountryDetailView.swift in Sources */,
 			);

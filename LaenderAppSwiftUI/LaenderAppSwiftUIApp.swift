@@ -11,7 +11,7 @@ import SwiftUI
 struct LaenderAppSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CountryStandardView()
         }
     }
 }
