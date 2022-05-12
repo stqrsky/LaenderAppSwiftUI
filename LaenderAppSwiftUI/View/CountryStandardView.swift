@@ -21,6 +21,7 @@ struct CountryStandardView: View {
                     
                 }
             }
+            .listStyle(InsetGroupedListStyle())
             .navigationBarTitle("Länder")
         }
         
